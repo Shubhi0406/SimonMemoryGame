@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+  <p type="button" id="help">How to Play</p>
+  <div class="help-popup">
+    <span class="helper"></span>
+    <div>
+        <div class="popupCloseButton">&times;</div>
+        <p class="popup-heading">HOW TO PLAY</p>
+        <p class="popup-text">
+        Simon will give the first signal. (One of the Color Lenses will light up, accompanied by a tone.)<br>
+         • Repeat that signal by touching the same Color Lens.<br>
+         • Simon will then add another color to the sequence by lighting up a Color Lens.<br>
+         • Repeat the first signal and then the newly added signal.<br>
+         • Simon will continue to add a color to the sequence.<br>
+          Continue to play the sequence for as long as you can!<br>
+        <br>
+        • If you fail to complete the sequence in the correct order, the Buzzer will sound and the game will end.<br>
+        • Simon records your High Score so you can play to beat it.<br>
+        </p>
+    </div>
+</div>
+
+  <h1 id="game-title">SIMON</h1>
+  <h1 id="level-title">Press the Button to Start</h1>
+  <h2 id="high-score">High Score: 0</h2>
+  <p id="game-pattern"></p>
+  <p id="user-pattern"></p>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn color green">
+
+      </div>
+
+      <div type="button" id="red" class="btn color red">
+
+      </div>
+    </div>
+
+    <div type="button" id="start" class="btn">START
+
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn color yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn color blue">
+
+      </div>
+
+    </div>
+
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="game.js" charset="utf-8"></script>
+</body>
+
+</html>

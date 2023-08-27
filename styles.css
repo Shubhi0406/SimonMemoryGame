@@ -1,0 +1,174 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  margin: 0
+}
+
+#level-title {
+  font-size: 2rem;
+  margin: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: #FEF2BF;
+  line-height: 1.5;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#high-score {
+  font-size: 1rem;
+  color: #ced9d1;
+  margin: 0 auto 5%;
+  margin-bottom: 2%;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 15vw;
+  width: 15vw;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+@media only screen and (max-width: 900px) {
+  .btn {
+    height: 125px;
+    width: 125px;
+  }
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+  margin-bottom: 0%;
+}
+
+.green {
+  background-color: green;
+  margin-bottom: 0%;
+}
+
+.blue {
+  background-color: blue;
+  margin-top: 0%;
+}
+
+.yellow {
+  background-color: yellow;
+  margin-top: 0%;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+#game-title {
+  font-size: 3rem;
+  color: aqua;
+  font-family: 'Press Start 2P', cursive;
+  padding-bottom: 0%;
+}
+
+p {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 0.2%;
+  margin-top: 0.2%;
+  font-weight: 100;
+}
+
+#start {
+  height: 50px;
+  width: 150px;
+  margin: 1%;
+  line-height: 50px;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#help {
+  color: white;
+  text-align: left;
+  margin: 1%;
+  cursor: pointer;
+}
+
+#help:hover {
+  text-decoration: underline;
+}
+
+.help-popup {
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.help-popup .helper{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.help-popup > div {
+  background-color: #fff;
+  box-shadow: 10px 10px 60px #555;
+  display: inline-block;
+  height: auto;
+  max-width: 551px;
+  min-height: 100px;
+  vertical-align: middle;
+  width: 60%;
+  position: relative;
+  border-radius: 8px;
+  padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+
+.popup-heading {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.popup-text {
+  color: black;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+}
